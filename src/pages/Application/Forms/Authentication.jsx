@@ -23,16 +23,16 @@ const Authentication = () => {
 
         setUser(user);
         
-          navigate('/registration');
+          navigate('/application-form/registration');
     }
     return (
         <div>
-              <button className='btn btn-primary'> <GoCheck />  Authentication </button>
-            
+              {/* <button className='btn btn-primary'> <GoCheck />  Authentication </button>
+             */}
              <form className='flex flex-col' onSubmit={handleSubmit(onSubmit)}>
              <label htmlFor="Enter your phone number" className='uppercase mt-2'>Enter your phone number <span className='text-red-500'>*(PLEASE ENSURE SAME MOBILE NUMBER HERE AS PROVIDED IN THE ONLINE APPLICATION FORM)</span> </label>   
             <input 
-              className='border px-4 py-2 w-1/2 my-3 border-gray-400 outline-none rounded-md'
+              className='border px-4 py-2 w-[70%] my-3 border-gray-400 outline-none rounded-md'
                     type="tel"
                     placeholder=""
                     {...register("phone", {
